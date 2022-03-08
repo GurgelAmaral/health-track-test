@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/dashboardss.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>HealthBoard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <aside class="col-12 col-lg-12 text-center px-0 bg-primary">
+                <div class="dflex justify-content-between px-4 align-items-center">
+                    <h5 class="txt-bold mb-2 py-3 text-center text-white">HealthBoard&trade;</h5>
+                    <div class="dflex flex-row  justify-content-center align-items-center gap-4">
+                        <div class="dflex gap-4">
+                            <a id="aside-bell" href="../HTML/msg-user.html"><img src="../DASHBOARD-IMGS/bell1.png"
+                                    class="pt-1" width="30px" alt="as"></a>
+                            <a href="../HTML/profile.html"><img
+                                    src="../IMAGES/pexels-nubia-navarro-(nubikini)-386024.jpg" width="40px"
+                                    height="40px" alt="foto de perfil"></a>
+                        </div>
+                        <img id="menu-btn" src="../DASHBOARD-IMGS/menu.png" width="28px" alt="">
+                    </div>
+                </div>
+                <ul class="nav justify-content-center gap-5 pb-4 px-4 pt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" aria-current="page"
+                            href="../HTML/dashboard.html">Resumo
+                            Corporal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/weight-healthboard.html">Saúde
+                            | Peso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/cal-info.html">Alimentação |
+                            Calorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/exercise-info.html">Atividades
+                            Físicas</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary br-btns w-100 dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Configurações
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="../HTML/profile.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="../HTML/diet-info.html">Configuração de Dieta</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../HTML/body-obj.html">Meta Corporal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white txt-bold" href="../HTML/login.html">Sair</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Fim Sidebar  -->
+
+            <!-- Navbar + Main content -->
+            <div class="col-12 col-lg-12">
+                <div class="row">
+                    <nav class="col-12 bg- border p-2 px-3">
+                        <div class=" dflex justify-content-between flex-row align-items-center">
+                            <p class="txt-bold pt-3">
+                                Configuração de Dieta
+                            </p>
+                            <div class="dflex gap-4">
+                                <a id="main-bell" href="../HTML/msg-user.html"><img src="../DASHBOARD-IMGS/bell.png" width="30px" alt="as"></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <main class="col animate__animated animate__fadeIn">
+                        <div class="container py-5 px-lg-4">
+                            <div class="row justify-content-center">
+                                <div class="">
+                                    <p class="text-primary txt-bold display-6">
+                                        Configuração de Dieta
+                                    </p>
+                                    <p class="txt-bold">O HealthBoard se preocupa com seu bem-estar, e está sempre buscando
+                                        melhorar seus códigos e algoritmos a fim de ser o mais preciso e intuitivo
+                                        possível.</p>
+                                    <p>
+                                        Caso siga algum tipo de dieta, você pode informá-la para tornar o HealthBoard
+                                        ainda mais preciso e com sua marca.
+                                    </p>
+                                    <p>
+                                        <small class="text-muted">você pode editar a qualquer momento sua dieta</small>
+                                    </p>
+                                    
+                                    <div>
+                                        <div class="mb-3">
+                                            <label for="diet-inp" class="form-label">Dieta Atual</label>
+                                            <input type="text" class="form-control px-5 py-2"
+                                                id="diet-inp" readonly value="Nenhuma">
+                                        </div>
+                                        <form action="" method="post">
+                                            <div
+                                                class="dflex justify-content-center align-items-center px-0 py-2">
+                                                <select class="form-select" name="" id="" aria-label="Default select example">
+                                                    <option value="">Tipo de Dieta</option>
+                                                    <option value="">Vegana</option>
+                                                    <option value="">Intolerância à Lactose</option>
+                                                    <option value="">Vegetariana</option>
+                                                </select>
+                                            </div>
+                                            <input type="submit" class="btn btn-primary p-2 br-btns my-3 w-100" value="Configurar Dieta">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <!-- Fim Navbar + Main content -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="../JS/dashscript.js"></script>
+</body>
+
+</html>

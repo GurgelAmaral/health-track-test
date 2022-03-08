@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+   font-family: 'Lato', sans-serif; 
+}
+
+.main-title{
+    font-size: 30px !important;
+}
+
+.br-btns{
+    border-radius: 25px !important;
+}
+
+.btn-outline-success:hover{
+    background-color: #68C86F !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+
+
+.btn-success{
+    background-color: #68C86F !important;
+    font-weight: bold !important;
+}
+
+.btn-success:hover{
+    background-color: #35923b !important;
+    font-weight: bold !important;
+}
+
+.btn-outline-success{
+    color: #68C86F !important;
+    font-weight: bold !important;
+}
+.row-h{
+    height: 70vh;
+}
+
+#img-cover{
+    width: 40vw;
+}
+
+.dflex{
+    display: flex;
+}
+
+.dflex-justify-content-center{
+    justify-content: center;
+}
+
+.dflex-align-items-center{
+    align-items: center;
+}
+
+.dflex-dir-row{
+    flex-direction: row;
+}
+
+.dflex-dir-col{
+    flex-direction: column;
+}
+
+.dflex-wrap{
+    flex-wrap: wrap;
+}
+
+.dflex-nowrap{
+    flex-wrap: nowrap;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.desc-txt{
+    font-size: .75em;
+}
+.color-666{
+    color: #666666;
+}
+.txt-bold{
+    font-weight: bold !important;
+}
+.font-size-min{
+    font-size: .7em;
+}
+
+#ht-ad{
+    font-size: 2.5vw;
+}
+
+.gap-6{
+    gap: 128px !important;
+}
+
+.feat-font-size{
+    font-size: .8em;
+}
+
+#last-section-id{
+    background-image: url(../IMAGES/pexels-nubia-navarro-\(nubikini\)-386024.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fader-out{
+    position: absolute;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    margin-top: -500px !important;
+}
+
+.cont-padding{
+    margin: 20px 0px 20px 0px !important;
+}
+
+.feat-font-size{
+    font-size: 25px;
+}
+
+.feat-desc-font-size{
+    font-size: 14px;
+    width: 294px;
+}
+
+main article p.color-666.col-12{
+    font-size: 18px;
+}
+
+main article small{
+    font-size: 11px;
+}
+
+main article div.col.mt-3 p{
+    font-size: 19px;
+}
+
+main article div.text-center.col-6.col-md-3 p{
+    font-size: 12px;
+
+}
+
+.extra-info-img{
+    padding: 35px 100px;
+}
+#article-txt{
+    width: 950px;
+}
+
+h3{
+    font-size: 35px !important;
+}
+
+
+
+#quote-name{
+    font-size: 12px;
+}
+
+#quote-outer-div{
+    margin: 50px 0 0px 0;
+}
+
+#home-cover-fader-out{
+    background-color: hsla(124, 47%, 60%, 0.2);
+}
+.color-a3{
+    color: #a3a3a3;
+}
+
+input{
+    outline: none;
+    border: 0;
+}
+
+#div-email{
+    border-radius: 11px 11px 0px 0px;
+    border: #a3a3a3 1px solid;
+    border-bottom: #a3a3a3 1px solid;
+}
+
+.login-fig{
+    width: 13% !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#div-passcode{
+    border-radius: 0px 0px 11px 11px;
+    border: #a3a3a3 1px solid;
+    border-top: 0;
+}
+
+
+#div-form-1{
+    border-radius: 11px 11px 0px 0px;
+    border: #a3a3a3 1px solid;
+    border-bottom: #a3a3a3 1px solid;
+}
+
+#div-form-2, #div-form-3{
+    border: #a3a3a3 1px solid;
+
+}
+#div-form-4{
+    border-radius: 0px 0px 11px 11px;
+    border: #a3a3a3 1px solid;
+    /* border-top: 0; */
+}
+
+#features-div{
+    /* background-color: #68c86e21; */
+    width: 100% !important;
+    border-top: #a3a3a380 1px solid;
+    border-bottom: #a3a3a380 1px solid;
+}
+
+
+.form-container{
+    width: 70%;
+}
+@media screen and (max-width: 576px) {
+    h3{
+        font-size: 150% !important;
+    }
+
+    .form-container{
+        width: auto;
+    }
+}

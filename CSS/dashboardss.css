@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+   font-family: 'Lato', sans-serif; 
+}
+
+
+.desc-style{
+    font-size: 23px;
+}
+
+.num-style{
+    font-size: 30px;
+}
+
+main{
+    /* background-color: rgb(245, 245, 245) !important; */
+    /* height: 600px !important; */
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside li{
+    list-style: none;
+}
+
+aside a:hover{
+    transition: all .1s;
+    font-weight: bold;
+}
+
+form#profile-form div input{
+    width: 290px !important;
+    /* padding: 0px 6px !important;  */
+}
+
+input{
+    text-align: center !important;
+}
+
+.input-component-style{
+    border-radius: 11px;
+    border: #a3a3a3 1px solid;
+}
+
+#register-weight-button{
+    width: 300px;
+}
+
+th{
+    text-align: center;
+}
+
+#see-weight-button{
+    width: 300px;
+}
+
+#confirm-weight-button{
+    width: 200px;
+}
+
+
+select{
+    text-align: center;
+}
+
+aside button:hover{
+    background-color: #68C86F !important;
+}
+
+aside button:focus{
+    background-color: #68C86F !important;
+    box-shadow: none !important;
+}
+
+aside button:active{
+    background-color: greenyellow !important;
+}
+
+input:disabled{
+    background-color: transparent !important;
+}
+
+
+#menu-btn{
+    display: unset;
+    cursor: pointer;
+}
+
+.noti-div{
+    border-bottom: #a3a3a35e 1px solid !important;
+}
+
+tbody tr:hover{
+    background-color: #68C86F;
+    transition: all .3s;
+}
+
+#prof-pic-div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #68C86F
+}
+
+
+div.dflex.gap-4 a img[src="../IMAGES/pexels-nubia-navarro-(nubikini)-386024.jpg"]{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.nav{
+    display: none;
+    background-color: #1e1d20 !important;
+    padding-top: 15px!important;
+}
+
+
+
+.nav a{
+    border-radius: 35px;
+    /* background-color: blue; */
+}
+.nav a:hover{
+    background-color: #327736 !important;
+}
+
+
+
+
+#register-container{display: none;}
+#show-container{display: none;}
+
+a[src="/DASHBOARD-IMGS/user.png"]{
+    border: 1px orange solid !important;
+    border-radius: 50% !important;
+    width: 35px !important;
+}
+
+
+
+#conf-edit{
+    display: none;
+}
+#conf-erase{
+    display: none;
+}
+
+main div.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 991px) {
+    #main-bell{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    .home-card{
+        border-bottom: #aeaeae73 1px solid !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .nav{
+        flex-direction: column !important;
+        gap: 2px !important;
+    }
+
+    #aside-bell{
+        display: none;
+    }
+}
+

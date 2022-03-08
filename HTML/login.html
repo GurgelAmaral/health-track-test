@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Login Plataforma Health Track</title>
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand main-title text-success txt-bold text-white" href="../HTML/index.html">Health Track</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../HTML/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/index.html#extra-info-title">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../HTML/login.html">Dashboard</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    <ul class="navbar-nav">
+                        <li class="me-3 mb-md-2 mb-2 mb-lg-0"><a
+                                class="btn btn-outline-success text-dark br-btns px-4 py-1.5"
+                                href="../HTML/login.html">Entrar</a></li>
+                        <li><a class="btn btn-success text-light br-btns px-3 py-1.5"
+                                href="../HTML/register.html">Cadastrar-se</a></li>
+                    </ul>
+                </span> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Div form + img -->
+    <div class="container-fluid bg-nfo">
+        <div class="row align-items-center justify-content-center">
+            <div class="container col-12 col-lg-6 justify-content-center dflex  animate__animated animate__fadeInLeft">
+                <img src="../IMAGES/Reset password-amico.png" class="img-fluid bg-dnger" width="80%" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="container bg-dangr form-container mt-4  animate__animated animate__fadeInRight">
+                    <p class="display-6">Bem-vindo(a) De Volta :)</p>
+                    <p class="color-a3 mb-4">Informe seu endereço de E-mail e senha, para ter acesso à Plataforma.</p>
+                    <form action="" method="post">
+                        <div class="bg-warn row p-2" id="div-email">
+                            <figure class="login-fig">
+                                <img width="30px" class="col" src="../IMAGES/envelope.png" alt="">
+                            </figure>
+                            <input class="col" type="email" required placeholder="Endereço de E-mail">
+                        </div>
+                        <div class="bg-warn row p-2" id="div-passcode">
+                            <figure class="login-fig">
+                                <img width="30px" class="col" src="../IMAGES/padlock.png" alt="">
+                            </figure>
+                            <input class="col" type="password" required placeholder="Senha">
+                        </div>
+                        <small>
+                            <a href="#">Esqueceu A Senha?</a>
+                        </small>
+                        <div class="row mt-4 gap-3">
+                            <!-- <input id="enter-btn" class="btn btn-success col-6 br-btns" type="button" value="Entrar Agora"> -->
+                            <a class="btn btn-success col-12 br-btns" href="../HTML/dashboard.html">Entrar Agora</a>
+                            <a class="col-12 btn btn-outline-success br-btns" href="../HTML/register.html">Cadastrar-se</a>
+                        </div>
+                    </form>
+                    <div class="row mt-5 dflex justify-content-center">
+                        <figure class="col-auto">
+                            <img src="../IMAGES/search.png" alt="">
+                        </figure>
+                        <small class="col-auto"><a href="">Entrar Com Conta Google</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Div form + img -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

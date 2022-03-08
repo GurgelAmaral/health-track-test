@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bem-vindo ao Health Track!</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand main-title txt-bold text-white" href="#">Health Track</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#extra-info-title">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/login.html">Dashboard</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav">
+                        <li class="me-3 mb-md-2 mb-2 mb-lg-0"><a
+                                class="btn nav-item btn-outline-success br-btns text-white px-4"
+                                href="../HTML/login.html">Entrar</a></li>
+                        <li><a class="btn btn-success text-light br-btns px-3 py-1.5"
+                                href="../HTML/register.html">Cadastrar-se</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Capa da homepage -->
+    <div id="home-cover-fader-out" class="container-fluid animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="row justify-content-center align-items-center p-4">
+                <div class="col-12 col-sm-6">
+                    <p class="display-5 txt-bold text-primary">Sua Saúde Na Palma Da Mão</p>
+                    <p class="text-muted">Tenha controle de suas calorias, estatísticas de atividades físicas e saúde a
+                        um
+                        clique de você com o
+                        Health Track</p>
+                    <a href="../HTML/login.html" class="btn btn-primary br-btns">Acessar Plataforma</a>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img width="100%" class="img-fluid" src="../IMAGES/Web devices-cuate.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Capa -->
+
+    <!-- Main content -->
+    <main class="container-fluid justify-content-center align-items-center mt-">
+        <!-- Artigo -->
+        <article class="container px-4 py-4">
+            <div class="row text-center cont-padding justify-content-center">
+                <h2 class="txt-bold display-6 pb-5">O Terrível 13,2%</h2>
+                <p id="article-txt" class="col-12 color-666">13,2% é a porcentagem de <span class="txt-bold">mortes
+                        associadas ao
+                        sedentarismo</span> no Brasil*. Parece pouco, não é? No entanto isto representa, em 2021, cerca
+                    de <span class="text-danger txt-bold">300.000 mortes anuais</span> devido a falta de atividade
+                    física regular!** No entanto a morte é apenas um reflexo de outros problemas gravíssimos que podem
+                    ser causados pelo sedentarismo.
+                </p>
+                <small class="text-muted">
+                    de acordo com a revista Lancet, 2013* <br>
+                    Segundo a OMS**
+                </small>
+                <div class="col mt-3">
+                    <p>O <span class="txt-bold">sedentarismo</span> também é responsável por:</p>
+                </div>
+                <div class="row justify-content-center align-items-center mt-3 m-0">
+                    <div class="text-center col-6 col-md-3">
+                        <span class="txt-bold text-danger display-6">13,4%</span>
+                        <p>Dos casos de câncer de mama</p>
+                    </div>
+                    <div class="text-center col-6 col-md-3">
+                        <span class="txt-bold text-danger display-6">14,6%</span>
+                        <p>Dos casos de câncer de cólon</p>
+                    </div>
+                    <div class="text-center col-6 col-md-3">
+                        <span class="txt-bold text-danger display-6">8,2%</span>
+                        <p>Dos casos de doenças cardíacas</p>
+                    </div>
+                    <div class="text-center col-6 col-md-3">
+                        <span class="txt-bold text-danger display-6">10,1%</span>
+                        <p>Dos casos de diabetes tipo 2</p>
+                    </div>
+                </div>
+                <p>Para não fazer parte dessa estatística, <span class="txt-bold">mude sua vida com Health Track!
+                    </span>
+                </p>
+            </div>
+        </article>
+        <!-- Fim Artigo -->
+
+        <!-- Features -->
+        <div id="features-div" class="container-fluid py-3 animate__animated animate__fadeInLeft">
+            <section class="container px-0 py-5 mt-">
+                <h2 class="txt-bold text-center display-6">Features Do Health Track&trade;</h2>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 dflex flex-column align-items-center">
+                        <img src="../IMAGES/dumbbell (1).png" alt="" width="24%" class="img-fluid my-4">
+                        <p class="text-center txt-bold feat-font-size text-primary">Acompanhamento</p>
+                        <p class="text-center txt-bold color-666 feat-desc-font-size p-2">A Tecnologia de Health
+                            Track permite que você
+                            armazene e programe suas atividades físicas sem esforço. Além de detalhar as calorias gastas
+                            e
+                            seu histórico. </p>
+                    </div>
+                    <div
+                        class="container col-lg-4 col-md-6 dflex flex-column align-items-center justify-content-center">
+                        <img src="../IMAGES/heart (1).png" alt="" width="20%"
+                            class="img-fluid mb-4 mt-5 mt-md-4 mt-lg-4">
+                        <p class="text-center txt-bold feat-font-size text-primary">Saúde em 1° Lugar</p>
+                        <p class="text-center txt-bold color-666 feat-desc-font-size p-2">Tenha estatísticas
+                            precisas acerca de sua saúde
+                            com o auxílio de índices para mensurar como está sua saúde corporal, além de ser avisado
+                            pelo
+                            Health Track se seus índices estão dentro do padrão recomendado pela OMS.</p>
+                    </div>
+                    <div
+                        class="container col-lg-4 col-md-12 dflex flex-column align-items-center justify-content-center">
+                        <img src="../IMAGES/dinner.png" alt="" width="25%" class="img-fluid mb-4 mt-5 mt-md-4 mt-lg-4">
+                        <p class="text-center txt-bold feat-font-size text-primary">Controle Alimentar</p>
+                        <p class="text-center txt-bold color-666 feat-desc-font-size p-2">Tenha a possibilidade
+                            de adicionar alimentos
+                            ingeridos, e acesso às calorias ingeridas ao longo do dia, assim como as calorias em cada
+                            alimento, e ao seu histórico alimentar.
+                            Além de poder escolher sua própria dieta. </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Fim Features -->
+
+        <!-- Extra info -->
+        <section class="container-fluid bg-sucess py-5 px-3 mx-0 w-100">
+            <h2 id="extra-info-title" class="txt-bold text-center display-6 py-3 mb-4">Pensado Para O Futuro!</h2>
+            <div class="container bg-dangr">
+                <div class="row px-2">
+                    <img src="../IMAGES/extrainfopic.PNG" alt="" width="20%"
+                        class="img-fluid col-12 col-md-6  extra-info-img">
+                    <div class="col-12 col-md-6 dflex flex-column justify-content-center gap-4">
+                        <p class="color-666 extra-info-desc">A expectativa de vida mundial só aumenta, e
+                            envelhecer com qualidade é o que todos nós queremos, não é mesmo? Você sente que precisa de
+                            um auxílio a mais para melhorar sua qualidade vida? </p>
+                        <h3 class="text-primary txt-bold">
+                            Mude Isso Agora Com Health Track!
+                        </h3>
+                        <a href="../HTML/register.html" class="btn btn-success br-btns py-2">
+                            Entre Para o Healthboard!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 dflex flex-column justify-content-center gap-4">
+                            <h3 class="text-primary txt-bold">Dashboard Interativo E De Fácil Utilização.</h3>
+                            <p class="color-666 extra-info-desc">Armazene seus dados de forma fácil e rápida através do
+                                Health Track e tenha acesso completo ao monitoramento corporal e índices para te
+                                auxiliar.
+                            </p>
+                            <a href="../HTML/register.html" class="btn btn-success br-btns py-2">
+                                Comece no HealthBoard!
+                            </a>
+                        </div>
+                        <img src="../IMAGES/dashboardpic.PNG" alt="" width="20%"
+                            class="img-fluid col-12 col-md-6 extra-info-img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Fim Extra info -->
+    </main>
+    <!-- Fim Main content -->
+
+    <!-- Section info quotation -->
+    <div id="quote-outer-div">
+        <section id="last-section-id" class="container-fluid">
+
+        </section>
+        <div id="fader-out"
+            class="container-fluid dflex flex-column justify-content-center align-items-center text-light text-center">
+            <p class="display-6">“Atividades Físicas Podem Salvar Vidas”</p>
+            <p class="display-md-6">Não Deixe Para Depois O Que Pode Ser Realizado Hoje.</p>
+            <p id="quote-name"> - National Center for Health Statistics Ethics Review Board (2022)</p>
+        </div>
+    </div>
+    <!-- Fim Section info quotation -->
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark w-100 text-light pt-5 pb-2">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-3 col-md-3">
+                    <p class="text-light display-6 txt-bold">Health Track</p>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                    <h6 class="txt-bold">Redes Sociais</h6>
+                    <p><a href="" class="text-light">Linkedin</a></p>
+                    <p><a href="" class="text-light">GitHub</a></p>
+                    <p><a href="" class="text-light">slaoq</a></p>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                    <h6 class="txt-bold">Conteúdo</h6>
+                    <p><a href="../HTML/index.html" class="text-light">Início</a></p>
+                    <p><a href="../HTML/login.html" class="text-light">Login</a></p>
+                    <p><a href="../HTML/register.html" class="text-light">Cadastro</a></p>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                    <h6 class="txt-bold">Atribuições</h6>
+                    <p><a target="_blank" href="https://storyset.com/" class="text-light">Storyset</a></p>
+                    <p><a target="_blank" href="https://www.flaticon.com" class="text-light">Flaticon</a></p>
+                    <p><a target="_blank" href="https://www.pexels.com/pt-br/" class="text-light">Pexels</a></p>
+                    <p><a target="_blank" href="https://www.chartjs.org" class="text-light">Charts.js</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="dflex container justify-content-center mt-5">
+            <small>Desenvolvido por Lucas Gurgel &copy; 2022</small>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

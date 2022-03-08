@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../css/dashboardss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>HealthBoard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <aside class="col-12 col-lg-12 text-center px-0 bg-primary">
+                <div class="dflex justify-content-between px-4 align-items-center">
+                    <h5 class="txt-bold mb-2 py-3 text-center text-white">HealthBoard&trade;</h5>
+                    <div class="dflex flex-row  justify-content-center align-items-center gap-4">
+                        <div class="dflex gap-4">
+                            <a id="aside-bell" href="../HTML/msg-user.html"><img src="../DASHBOARD-IMGS/bell1.png"
+                                    class="pt-1" width="30px" alt="as"></a>
+                            <a href="../HTML/profile.html"><img
+                                    src="../IMAGES/pexels-nubia-navarro-(nubikini)-386024.jpg" width="40px"
+                                    height="40px" alt="foto de perfil"></a>
+                        </div>
+                        <img id="menu-btn" src="../DASHBOARD-IMGS/menu.png" width="28px" alt="">
+                    </div>
+                </div>
+                <ul class="nav justify-content-center gap-5 pb-4 px-4 pt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" aria-current="page"
+                            href="../HTML/dashboard.html">Resumo
+                            Corporal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/weight-healthboard.html">Saúde
+                            | Peso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/cal-info.html">Alimentação |
+                            Calorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-primary txt-bold" href="../HTML/exercise-info.html">Atividades
+                            Físicas</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary br-btns w-100 dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Configurações
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="../HTML/profile.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="../HTML/diet-info.html">Configuração de Dieta</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../HTML/body-obj.html">Meta Corporal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white txt-bold" href="../HTML/login.html">Sair</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Fim Sidebar  -->
+
+            <!-- Navbar + Main content -->
+            <div class="col-12 col-lg-12">
+                <div class="row">
+                    <nav class="col-12 border p-2 px-3">
+                        <div class=" dflex justify-content-between flex-row align-items-center">
+                            <p class="txt-bold pt-3 text-primary">
+                                Registro / Histórico de Massa Corporal
+                            </p>
+                            <div class="dflex gap-4">
+                                <a id="main-bell" href="../HTML/msg-user.html"><img src="../DASHBOARD-IMGS/bell.png"
+                                        width="30px" alt="as"></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <main class="col bg-ifo animate__animated animate__fadeIn">
+                        <div class="container my-5 text-center">
+                            <p class="txt-bold display-6">Última Massa Corporal:</p> <h5 class="text-primary">99 kg</h5>
+                        </div>
+                        <div class="container my-5 p-2">
+                            <div class="row gap-5 gap-lg-0">
+                                <div class="col-12 col-lg-6">
+                                    <img class="img-fluid" src="../DASHBOARD-IMGS/fc3noor2.png" alt="">
+                                </div>
+                                <form class="col-12 col-lg-6" action="">
+                                    <p class="text-center txt-bold">Registrar Nova Pesagem</p>
+                                    <div class="mb-4 ">
+                                        <label for="inp1" class="form-label color-a3">Massa Corporal (kg)</label>
+                                        <input type="number" class="form-control p-2 py-3" id="inp1"
+                                            placeholder="Ex: 123">
+                                    </div>
+                                    <div class="mb-4 ">
+                                        <label for="inp2" class="form-label color-a3">Massa Corporal (kg)</label>
+                                        <input type="date" class="form-control p-2 py-3" id="inp2">
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <input type="submit" class="btn btn-primary form-control p-2 py-3" id="inp2">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+            <!-- Fim Navbar + Main content -->
+
+        </div>
+    </div>
+    <!-- Modal confirmação Exclusão de dado -->
+    <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body txt-bold">
+                    Tem Certeza Que Deseja <span class="text-danger">Excluir</span> Este Dado?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <form action="">
+                        <button type="submit" class="btn btn-danger">Excluir</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal confirmação Alteração de dado -->
+    <div class="modal fade" id="modalAlter" tabindex="1" aria-labelledby="modalAlter1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAlter1">Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body txt-bold">
+                    Tem Certeza Que Deseja <span class="text-danger">Alterar</span> Este Dado?
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-btn-alter-close" type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Não Alterar</button>
+                    <form action="">
+                        <button type="submit" class="btn btn-danger">Alterar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="../JS/dashscript.js"></script>
+</body>
+
+</html>

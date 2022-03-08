@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/dashboardss.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>HealthBoard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <aside class="col-12 col-lg-2 text-center px-0">
+                <div class="dflex justify-content-around align-items-center">
+                    <h5 class="txt-bold mb-2 py-3 text-center">HealthBoard&trade;</h5>
+                    <img id="menu-btn" src="../DASHBOARD-IMGS/menu.png" width="28px" alt="">
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span class="txt-bold text-success">Dashboard Home</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group mb-">
+                                    <li><a class="text-dark" href="dashboard.html">Resumo Corporal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <span class="txt-bold text-success">Índices | Peso</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush mb-1">
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/weight-healthboard.html">Registro/Histórico
+                                            de peso</a></li>
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/body-indexes.html">Índices corporais</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <span class="txt-bold text-success">Atividades Físicas</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush mb-1">
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/exercise-info.html">Histórico de
+                                            atividades</a></li>
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/exercise-info.html">Programar atividade</a>
+                                    </li>
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/exercise-info.html">Resumo atividades</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <span class="txt-bold text-success">Alimentação | Calorias</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush mb-1">
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/cal-info.html">Histórico de
+                                            calorias</a></li>
+                                    <li class="list-group-item"><a class="text-dark" href="../HTML/cal-info.html">Registrar calorias</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                <span class="txt-bold text-success">Preferências <br> Configurações</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a class="text-dark " href="../HTML/profile.html">Perfil</a></li>
+                                    <li class="list-group-item"><a class="text-dark " href="../HTML/diet-info.html">Dieta</a></li>
+                                    <li class="list-group-item"><a class="text-dark " href="">Objetivo corporal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="logout-btn" class="text-start p-3">
+                    <a href="login.html" class="text-danger text-start">Sair</a>
+                </p>
+            </aside>
+            <!-- Fim Sidebar  -->
+
+            <!-- Navbar + Main content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <nav class="col-12 bg- border p-2 px-3">
+                        <div class=" dflex justify-content-between flex-row align-items-center">
+                            <p class="txt-bold pt-3">
+                                Índices Corporais
+                            </p>
+                            <div class="dflex gap-4">
+                                <a href="../HTML/msg-user.html"><img src="../DASHBOARD-IMGS/bell.png" width="30px" alt="as"></a>
+                                <a id="sm-profile-pic" href="../HTML/profile.html"><img src="../DASHBOARD-IMGS/user.png" width="20px" alt="as"></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <main class="col bg-ifo">
+                        <div class="container p-2 px-lg-4 p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-3 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        ÍNDICE DE MASSA CORPORAL
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-0 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        ÍNDICE DE GORDURA CORPORAL
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-0 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        TAXA METABÓLICA BASAL <br>
+                                        <small>Consumo Recomendado de Calorias Diariamente</small>
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-0 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        TAXA DE CONSUMO PROTEÍCO <br>
+                                        <small>Consumo Diário Recomendado de Proteínas</small>
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-0 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        ÍNDICE MÍNIMO DE HIDRATAÇÃO <br>
+                                        <small>Quantidade Diária Mínima de Água</small>
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-2 px-lg-4">
+                            <div class="bg-white border rounded py-5 mt-0 px-4 row">
+                                <div class="col">
+                                    <p class="color-a3">
+                                        ÍNDICE DE ALGUMA COISA <br>
+                                        <small>Descrição Sucinta Do Índice Aqui</small>
+                                    </p>
+                                    <p class="display-6">XX</p>
+                                    <p class="color-a3 txt-bold">Atualmente Normal</p>
+                                </div>
+                                <div class="col bg-success">
+                                    I HEAR BABIES CRYING
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="container">
+                            <div class="row gap-5 my-4">
+                                <div class="col rounded bg-white border p-5 dflex flex-column gap-3">
+                                    <img class="" src="../DASHBOARD-IMGS/weight-scale.png" width="50px" alt="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="txt-bold color-a3">Índice de Massa Corporal</p>
+                                            <p class="txt-bold">23 | <span>Normal</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col rounded bg-white border p-5 dflex flex-column gap-3">
+                                    <img src="../DASHBOARD-IMGS/wall-clock.png" width="50px" alt="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="txt-bold color-a3">Tempo Atividade Física</p>
+                                            <p class="txt-bold">23 | <span>Normal</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gap-5 my-4">
+                                <div class="col rounded bg-white border p-5 dflex flex-column gap-3">
+                                    <img class="" src="../DASHBOARD-IMGS/dish.png" width="50px" alt="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="txt-bold color-a3">Calorias Ingeridas Hoje</p>
+                                            <p class="txt-bold">23 | <span>Normal</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col rounded bg-white border p-5 dflex flex-column gap-3">
+                                    <img class="" src="../IMAGES/dumbbell (1).png" width="50px" alt="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="txt-bold color-a3">Calorias Queimadas Hoje</p>
+                                            <p class="txt-bold">23 | <span>Normal</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="container">
+                            <div class="row bg-white mt-3 py-4 rounded border">
+                                <div class="col-6 dflex justify-content-center">
+                                    <a href=""
+                                        class="btn  btn-outline-success p-3 br-btns" id="register-weight-button">Cadastrar Novo Peso
+                                    </a>
+                                </div>
+                                <div class="col-6 dflex">
+                                    <a href=""
+                                        class="btn br-btns btn-outline-success p-3" id="see-weight-button">Ver Histórico de Peso
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="bg-white px-4 row mt-3 py-4 rounded border">
+                                <p class="txt-bold col-12">Registrar Última Pesagem</p>
+                                <div class="col">
+                                    <form action="" method="post">
+                                        <div class="row align-items-center gap-3">
+                                            <div class="col bg-ifo dflex justify-content-center align-items-center px-3 py-2 input-component-style">
+                                                <input type="number" name="" id="" required placeholder="Massa Corporal (Kg)">
+                                            </div>
+                                            <div class="col bg-warnig dflex justify-content-center align-items-center px-3 py-2 input-component-style">
+                                                <input type="date" name="" id="" required>
+                                            </div>
+                                            <div class="col">
+                                                <input class="btn btn-outline-success br-btns py-2" id="confirm-weight-button" type="submit" value="Registrar">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="bg-white px-4 row mt-3 py-4 rounded border">
+                                <table class="table table-responsive">
+                                    <thead>
+                                      <tr>
+                                        
+                                        <th scope="col">Massa Corporal (Kg)</th>
+                                        <th scope="col">Data de Registro</th>
+                                        <th scope="col">Handle</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        
+                                        <td>25</td>
+                                        <td>12/11/21</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        
+                                        <td>23</td>
+                                        <td>15/09/11</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        
+                                        <td>213,24</td>
+                                        <td>03/04/21</td>
+                                        <td>@6577</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <!-- Fim Navbar + Main content -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="../JS/dashscript.js"></script>
+</body>
+
+</html>
