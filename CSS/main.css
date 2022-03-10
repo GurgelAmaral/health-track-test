@@ -22,7 +22,7 @@
 
 .btn-success{
     background-color: #68C86F !important;
-    font-weight: bold !important;
+    
 }
 
 .btn-success:hover{
@@ -32,7 +32,6 @@
 
 .btn-outline-success{
     color: #68C86F !important;
-    font-weight: bold !important;
 }
 .row-h{
     height: 70vh;
