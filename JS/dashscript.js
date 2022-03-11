@@ -1,7 +1,7 @@
 //botão menu
 let menuBtn = document.getElementById('menu-btn')
 let menuBtnState = false
-//outras vars
+//variável sidebar
 let accordionVar = document.getElementsByClassName('nav')[0]
 accordionVar.style.display = "none"
 
